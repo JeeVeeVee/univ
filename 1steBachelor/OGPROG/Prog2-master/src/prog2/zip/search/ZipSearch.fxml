@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ZipSearch.fxml
+  ============================================================
+  Copyright (C) 2012-2013 Universiteit Gent
+  
+  Bijlage bij het vak 'Programmeren 2'.
+  
+  Auteur: Kris Coolsaet
+-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<VBox prefHeight="300.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="prog2.zip.search.ZipSearchCompanion">
+  <stylesheets>
+    <URL value="@zipsearch.css"/>
+  </stylesheets>
+  <TextField fx:id="searchField" minHeight="20.0" onAction="#doSearch"
+  />
+  <TableView fx:id="tableView" VBox.vgrow="ALWAYS">
+    <columnResizePolicy>
+      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+    </columnResizePolicy>
+    <columns>
+      <TableColumn id="zipColumn" prefWidth="100.0" text="Postnr" fx:id="zipColumn"/>
+      <TableColumn prefWidth="200.0" text="Gemeente" fx:id="nameColumn"/>
+    </columns>
+    <placeholder>
+      <Label id="placeholder" text="&lt;leeg&gt;"/>
+    </placeholder>
+  </TableView>
+</VBox>

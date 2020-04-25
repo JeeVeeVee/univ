@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ButtonsEight.fxml
+  ============================================================
+  Copyright (C) 2012-2013 Universiteit Gent
+  
+  Bijlage bij het vak 'Programmeren 2'.
+  
+  Auteur: Kris Coolsaet
+-->
+<!-- IMPORTS niet vergeten! -->
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.net.URL?>
+
+<?import prog2.buttons.*?>  <!-- om één of andere reden moet er hier een wild card staan (bug?) -->
+
+<AnchorPane id="AnchorPane" prefHeight="171.0" prefWidth="319.0" styleClass="mainFxmlClass"
+            xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40"
+            fx:controller="prog2.buttons.ButtonsEightCompanion">
+    <fx:define>
+        <PageModel fx:id="model"/>
+    </fx:define>
+    <stylesheets>
+        <URL value="@disabledEnabled.css" />
+    </stylesheets>
+    <PageLabel id="pageLabel" alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="160.0" layoutY="14.0" model="$model" prefHeight="143.0" prefWidth="146.0" text="Blz 1" />
+    <PageButton increment="-10" layoutX="36.0" layoutY="14.0" mnemonicParsing="false" model="$model" text="Min 10" />
+    <PageButton increment="-1" layoutX="36.0" layoutY="55.0" mnemonicParsing="false" model="$model" text="Min 1" />
+    <PageButton increment="1" layoutX="36.0" layoutY="94.0" mnemonicParsing="false" model="$model" text="Plus 1" />
+    <PageButton increment="10" layoutX="36.0" layoutY="130.0" mnemonicParsing="false" model="$model" text="Plus 10" />
+</AnchorPane>

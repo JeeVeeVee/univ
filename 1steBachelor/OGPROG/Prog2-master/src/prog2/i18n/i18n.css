@@ -1,0 +1,23 @@
+/* i18n.css
+ * ============================================================
+ * Copyright (C) 2012-2013 Universiteit Gent
+ * 
+ * Bijlage bij het vak 'Programmeren 2'.
+ * 
+ * Auteur: Kris Coolsaet
+ */
+
+HBox{
+    -fx-padding:15;
+    -fx-spacing:10;
+    -fx-alignment: CENTER;
+    -fx-pref-width: 500;
+}
+
+TextField {
+    -fx-pref-width: 250;
+}
+
+.label {
+    -fx-font-weight: bold
+}

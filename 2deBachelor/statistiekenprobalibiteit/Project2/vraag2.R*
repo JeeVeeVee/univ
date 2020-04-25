@@ -1,0 +1,33 @@
+library(boot)
+
+data <- data.frame(uitvoertijden)
+sum_types <- rowsum(check$uitvoertijd, check$type, reorder = TRUE, na.rm = FALSE)
+sum_types <- transform(sum_types, gemiddelde = X_data / 10)                                       
+
+IntelKS <- check[check[, "type"] == "Intel Core i9-9900KS",]$uitvoertijd
+AMD5 <- check[check[, "type"] == "AMD Ryzen 5 3600X",]$uitvoertijd
+AMD9 <- check[check[, "type"] == "AMD Ryzen 9 3900X",]$uitvoertijd
+IntelXE <- check[check[, "type"] == "Intel Core i9-9980XE",]$uitvoertijd
+
+AVGIntelKS <- mean(IntelKS)
+AVGAMD5 <- mean(AMD5)
+AVGAMD9 <- mean(AMD9)
+AVGINTELXE <- mean(INTELXE) 
+
+VARIntelKS <- var(IntelKS)
+VARAMD5 <- var(AMD5)
+VARAMD9 <- var(AMD9)
+VARINTELXE <- var(INTELXE)
+
+doBoot <- function(x){
+  results <- boot(data=x, statistic=Bmean , R=10000)
+  boot.ci(results, type = "perc", conf=0.991)
+}
+
+INTELKS_AMD5 <- doBoot(IntelKS - AMD5) 
+INTELKS_AMD9 <- doBoot(IntelKS - AMD9) 
+INTELKS_INTELXE <- doBoot(IntelKS - IntelXE) 
+INTELXE_AMD5 <- doBoot(IntelXE - AMD5) 
+INTELXE_AMD9 <- doBoot(IntelXE - AMD5) 
+AMD5_AMD9 <- doBoot(AMD9 - AMD5) 
+

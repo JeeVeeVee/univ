@@ -1,0 +1,32 @@
+TableView {
+   -fx-pref-width:250;
+   -fx-pref-height: 300;
+}
+
+/* Er is geen eenvoudige manier om de hoofding van een tableView te verwijderen */
+TableColumnHeader {
+    visibility: hidden;
+    -fx-padding:0;
+    -fx-size: 1; /* 0 kan niet */
+}
+
+BorderPane {
+    -fx-base: lightblue;
+    -fx-spacing: 10;
+}
+
+#title {
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-padding: 10;
+}
+
+HBox {
+    -fx-padding: 10;
+    -fx-alignment: center;
+}
+
+HBox Button {
+    -fx-padding: 8;
+}
+

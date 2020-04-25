@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# Start de Derby server voor gebruik in Programmeren 2
+#
+
+# Volgende drie variabelen moeten correct zijn ingesteld (zonder / op het einde)
+# Installatiemap van java
+export JAVA_HOME=/usr/lib/jvm/jdk-11.0.1+13
+
+# Basismap waarin Derby jouw databankbestanden moet zoeken
+export DERBY_SYSTEM_HOME=/public/db
+
+# Map waar de Derby-scripts zich bevinden
+export DERBY_HOME=/usr/share/derby
+
+JAVA_ARGS="-Dderby.system.home=${DERBY_SYSTEM_HOME}" $DERBY_HOME/NetworkServerControl start -p 45270 &
+
+#
+echo Derby server gestart. Gebruik stopDerby om hem terug te stoppen

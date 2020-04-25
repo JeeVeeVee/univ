@@ -1,0 +1,229 @@
++10)Efficiënt geheugenbeheer in procedurale programmeertalen 
+1) RIJEN IN 1 DIMENSIE
+rijen zijn eern reeks van variablen van hetzelfde type, die naast elkaar in het geheugen zijn opgslagen 
+syntax: 
+
+type naam[constante_gehele_uitdrukking]
+
+waarbij de naam de naam is van de rij, type het type van alle elementen van de rij en 
+constante_gehele_uitdrukking is de lengte van de rij 
+
+initialisatiesyntax: 
+type naam[constante_gehele_uitdrukking] = {constante_uitdrukking {,constante_uitdrukking}*};
+
+-> niet alle elementen hoeven geinitialiseerd worden 
+-> de lengte van de rij hoeft hier eig niet ingevult te worden, de compiler zet die dan gwn op het aantal elementen uit het linkerlid 
+
+voor karakterrijen zijn volgende 2 initialisaties equivalent
+- aan de hand van een string 
+- opsomming tussen de {} van de individuele karakters 
+
+
+C-idioom 
+voor het behandelen van elementen uit een rij worden vaak for-lussen gebruikt 
+
+arrays kunnen ook als functie-argument worden meegegeven, voorbeeld: 
+
+int bereken_som(int[ ], int)
+
+int bereken_som(int a[ ],  int n){
+	int som = 0;
+	int i; 
+	for(i = 0; i < n; i++){
+		som += a[i];
+	}
+	return som;
+}
+
+
+WIJZERS
+een wijzer is variable, die een adres bevat: op dit adres is data opgeslagen
+
+de &-operator, toegepast op een variable levert het adres van deze variable op
+de *-operator, toegepast op een wijzer levert de waarde van de data waarvan de wijzer variable het adres ebevat 
+via de *-operator kan men de waarde van de data updaten 
+
+elk type en geasocieerd wijzertype worden voorgesteld door: type en type*
+
+ook NULL is een geldige waarde voor een pointer, dit wil zeggen dat de pointer nergens naar wijst 
+je kan testen of een pointer een NULL-pointer is door if(!p) 
+
+!!! als je een pointer-variable niet initialiseerd kan het naar overal wijzen, dat kan dus ook toevallig 
+NULL zijn, zo een pointer noemen we een dangling pointer, 
+
+initialiseer daarom altijd je pointer voor je er * op toepast !!!
+
+een wijzer kan ook wijzen naar een andere wijzer 
+
+CALL BY REFERENCE
+als je een adres meegeeft als functie argument kan je de waarde van hetgeen waar de pointer naar wijst
+aanpassen 
+
+sleutelwoord const zorgt ervoor dat een variable niet kan worden aangpast
+-> dit kan wel via een een pointer, dit zal je wel een warning opleveren 
+-> als je ook van de pointer naar de const variable een const maakt, zal je bij poging to aanpassen 
+   een error krijgen 
+
+
+DYNAMISCH GEHEUGENBEHEER
+soms is het nodig om tijdens de uitvoering van een programma geheugen te kunnen reserverer/vrijgeven
+in C is dynamisch geheugenbeheer aanwezig door de functies in <stdlib.h> 
+
+1) memory allocation
+er zijn 2 functies die geheugen kunnen aloceren
+void* malloc(size_t aantal_bytes)
+void* calloc(size_t aantal, size_t aantal_bytes)
+
+het type van size_t is een unsigned int, de functie malloc geet een pointer terug naar de start van een geheugenblok dat net voldoende is om aanatl_bytes bytes op te slaan, de pointer die wordt teruggegeven 
+is een generieke pointer (je kan hem laten wijzen naar elk type). Het geheugen van malloc is niet geïnitialiseerd. De functie calles doet dit wel (zet alle waarden op 0)
+
+men kan de vereiste geheugen voor een bepaald type opvragen met de functie sizeof(type)
+
+
+als de geheugen allocatie om 1 of andere reden niet doorging, geeft de functie NULL terug
+
+2) releasing memory
+al het gealloceerde geheugen, aangemaakt met malloc, calloc en realoc,moet vrijgegeven
+worden. Je kan dit doen door gebruik te maken van de free functie. Aan deze
+functie moet je de start-wijzer meegeven als argument. Enkel wijzerwaarden teruggekregen van een malloc, calloc, realloc kunnen dus doorgegeven worden aan de free-functie 
+
+void free(void* toegewezen_pointer);
+
+Hierbij kan er in het programma een fout optreden wanneer: 
+ 1) het argument toegewezen_pointer al vrijgegeven is 
+ 2) het arguemnt toegewezen_pointer een andere waarde heeft dan een toegewezen pointer    (geen returnwaarde van een malloc, calloc of realloc)
+
+
+3) reuse of memory
+De functie realloc: 
+void* realloc (void* toegewezen_pointer, size_t, aantal_bytes);
+
+probeerde een bestaand gereserveerd (!) geheugenblok (waar het variable 
+toegewezen_pointer naar wijst) te hergebruiken voor aantal_bytes. 
+
+Indien aantal_bytes
+< de oorspronkelijke grootte van het geheugenblok, dan gaat het op de inkrimping,
+welke zeker lukt: de inhoud van het begin van het blok blijft behouden(de return
+waarde is identiek aan toegewezen_pointer). 
+
+Wanneer aantal_bytes > de oorspronkelijke
+grootte van het geheugenblok, dan gaat het over een uitbreiding, welke niet
+noodzakelijk lukt. Men kan 3 gevallen onderscheiden:
+ 1) de uitbreiding lukt op dezelfde plaats in het geheugen (achter het
+    oorspronkelijke geheugenblok is voldoende vrije ruimte voor uitbreiding): de 
+    return waarde is dan identiek aan het argument van toegewezen_pointer
+ 
+ 2) de uitbreiding lukt niet op dezelfde plaats in hetegeheigen (er is niet voldoende
+    plek achter het originele geheugenblok) maar op een andere plek lukt het wel : de 	  inhoud van het originele geheugenblok wordt gekopieerd naar een nieuwe plaats en 
+    de returnwaarde van realloc is een nieuwe waarde, verschillend van 
+    toegewezen_pointer, vang daarom altijd de returnwaarde van realloc op!!!
+
+ 3) de uitbreiding lukt niet op dezelfde plaats in het geheugen en ook niet op een 
+    andere plek, de returnwaarde is NULL
+
+
+fouten en problemen met geheugenbeheer
+- zwevende pointer : kan voorkomen wanneer een pointer nog gebruikt wordt na een free-
+  oproep  of wanneer meerdere pointers wijzen naar hetzelfde blok en dus na 1 free
+  allemaal ongeldig wordne 
+
+- geheugenlek (memory leak) : kan voorkomen wanneer er geen pointers meer zijn naar 
+  een gereserveerd stuk geheugen en er dus ook geen free functie meer kan worden
+  opgeroepen (dit geheugen blijft gealloceerd) 
+
+- geheugen-fragmentatie : na veelvuldig alloceren en dealloceren kunnen bepaalde, 
+  kleine stukjes niet mee gebruikt worden omdat ze te klein zijn 
+
+!!!!
+er dien in C onderscheid gemaakt te worden tussen segment-geheugen (functie code en
+bibliotheek functies), en heap geheugen (dynamisch gealloceerde variablen, globale en statistische variablen 
+!!!!
+
+5) STRINGS
+Een string in C is een array van chars (pointer naar het de eerste char van een lijst van chars)
+de vereiste geheugenruimt voor een string is steeds gelijk aan :
+(aantal_karakters + 1)*sizeof(char)
+bij declaratie, als je "" gebruikt, zal de compiler zelf \0 toevoegn (tnx bro)
+
+verschil tussen String en char [] 
+
+char* s = "abc" 
+char a[ ] = {'a', 'b', 'c','\0'};
+
+String functies uit <string.h> 
+concat string  : char *strcat(char *s1, const char *s2);
+vergelijken    : int strcmp (const char *s1, const char s2);
+kopieren       : char *strcpy(char *s1 const char *s2); 
+lengte bepalen : size_t strlen(const char *s); /* exclusief EOS */
+
+deze functies alloceren geen geheugen, dit moet je zelf doen 
+zorg zeker voor voldoende geheugen 
+
+
+vermijd buffer overflows (klinkt strak) 
+
+
+MULTIDIMENSIONALE RIJEN 
+initialisatie van n-dimensionale arrays gebeurt via n geneste for loops, 
+ontbrekende waarden worden op 0 geplaatst 
+
+wijzerrijen 
+
+programma argumenten 
+doorgeven van commandolijn-argumenten aan programma's gebeurt ook via een array argv 
+van karakter string. de waarde van het argument argc geeft weer hoeveel
+karakterstrings er aanwezig zijn in argv, meestal gelden volgende assumpties:
+argv[0] = naam van programma
+argv[1] = eerste argument 
+argv[2-> argc - 1] = argumentne 
+argv[argc] = NULL
+
+
+FUNCTIEARGUMENTEN
+klassieke declaratie van een functie: 
+type naam(proto_lijst)
+
+declaratie van een functiewijzer: 
+type (*naam)(proto_lijst)
+
+derefentie gebeurt in de functie zelf, dus zijn volgende 1 uitdrukkingen equivalent
+*naam(actuele_lijst) 
+naam(actuele_lijst) 
+
+STRUCTS IN COMBINATIE MET WIJZERS
+(*struct_wijzer).veldnaam
+kan worden vervangen door 
+struct_wijzer -> veldnaam
+
+
+soorten kopieën 
+beschouw volgende code: 
+data struct {
+	char naam[30];
+	short leeftijd; 
+	char code; 
+} persoon1
+
+persoon1 a = {"Jan Jansens", 30, 'A'}
+persoon1 b = {0} 
+b = a 
+
+hier is er sprake van een DIEPE KOPIE, de beide structs zijn mooi gescheiden in het
+geheugen
+
+
+beschouw volgende code: 
+data struct {
+	char *naam;
+	short leeftijd; 
+	char code;
+} persoon2
+
+persoon2 a = {"Jan Jansens", 30, 'A'}
+persoon2 db = {0}
+b = a
+
+dit is een ondiepe kopie, de beide structs bevatten een veld, waarbij beiden wijzen
+naar hetzelfde geheuge. Het zijn dus geen onafhankelijke kopieën 
+
+

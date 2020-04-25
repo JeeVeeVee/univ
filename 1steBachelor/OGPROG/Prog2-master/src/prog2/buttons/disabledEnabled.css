@@ -1,0 +1,38 @@
+/* disabledEnabled.css
+ * ============================================================
+ * Copyright (C) 2012-2013 Universiteit Gent
+ * 
+ * Bijlage bij het vak 'Programmeren 2'.
+ * 
+ * Auteur: Kris Coolsaet
+ */
+
+#AnchorPane {
+    -fx-background-color: lightblue;
+}
+
+.button {
+    -fx-background-color: white;
+    -fx-border-color: blue;
+    -fx-border-width: 3;
+    -fx-font-weight: bold;
+    -fx-pref-width: 102;
+}
+
+.button:disabled {
+    -fx-border-color: grey;
+}
+
+.button:armed {
+    -fx-border-color: red;
+}
+
+#blzLabel, #pageLabel {
+    -fx-background-color: blue;
+    -fx-opacity: 100;
+    -fx-font-size: 30;
+    -fx-font-style: italic;
+    -fx-font-family: serif;
+    -fx-text-fill: white;
+}
+

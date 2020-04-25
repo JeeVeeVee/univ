@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import Oefeningen.ContactsGUI.*?>
+
+
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="35.0" layoutY="30.0" text="Voornaam" />
+      <Label layoutX="35.0" layoutY="62.0" text="Familienaam" />
+      <TextField fx:id="voornaam" layoutX="151.0" layoutY="25.0" prefHeight="26.0" prefWidth="315.0" />
+      <TextField fx:id="familienaam" layoutX="151.0" layoutY="57.0" prefHeight="26.0" prefWidth="315.0" />
+      <TableView fx:id="tabel" layoutX="13.0" layoutY="100.0" prefHeight="228.0" prefWidth="573.0">
+        <columns>
+          <TableColumn fx:id="type" prefWidth="244.0" text="Type" />
+          <TableColumn fx:id="adress" prefWidth="252.0" text="Adres" />
+            <TableColumn fx:id="trash" prefWidth="76.0" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="select" layoutX="68.0" layoutY="345.0" prefHeight="26.0" prefWidth="206.0" />
+      <ImageButton fx:id="save" layoutX="524.0" layoutY="22.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="62.0" onAction="#save"/>
+      <ImageButton fx:id="add" layoutX="330.0" layoutY="338.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="42.0" onAction="#add" />
+   </children>
+</AnchorPane>

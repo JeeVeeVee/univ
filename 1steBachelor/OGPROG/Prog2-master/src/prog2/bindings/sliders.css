@@ -1,0 +1,10 @@
+GridPane {
+    -fx-vgap: 15;
+    -fx-hgap: 10;
+
+    -fx-padding: 10;
+}
+
+ .slider {
+    -fx-show-tick-marks: true
+}

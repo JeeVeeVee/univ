@@ -1,0 +1,11 @@
+#left {
+   -fx-font: bold 16px sans-serif;
+}
+
+#right {
+   -fx-font: 12px monospace;
+}
+
+.error {
+  -fx-text-fill: red;
+}

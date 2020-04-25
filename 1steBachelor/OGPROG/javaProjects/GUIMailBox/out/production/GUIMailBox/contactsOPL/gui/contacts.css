@@ -1,0 +1,53 @@
+/* contacts.css
+ *
+ */
+
+HBox {
+    -fx-spacing: 10;
+    -fx-alignment: CENTER_LEFT
+}
+
+#buttonPane {
+    -fx-alignment: CENTER
+}
+
+HBox .label {
+    -fx-font-weight: bold
+}
+
+VBox {
+    -fx-padding: 10;
+    -fx-spacing: 10    
+}
+
+.searchButton {
+    -fx-graphic: url("icons/search.png");
+}
+
+.deleteButton {
+    -fx-graphic: url("icons/trash.png");
+}
+
+.editButton {
+    -fx-graphic: url("icons/edit.png");
+}
+
+.newButton {
+    -fx-graphic: url("icons/plus.png");
+}
+
+.saveButton {
+    -fx-graphic: url("icons/save.png");
+}
+
+PersonInfo {
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+    -fx-padding: 10px;
+    -fx-pref-width: 400px;
+}
+
+.buttonHBox {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}

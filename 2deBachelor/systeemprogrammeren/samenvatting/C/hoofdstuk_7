@@ -1,0 +1,101 @@
+7) Taalelementen procedurale programmeertaal C
+SYNTAX REGELS	
+mulitline comment: /* inhoud */, je kan commentaar niet nesten
+identifiers zijn namen van variabelen of functies, deze mogen starten met een letter of een underscore
+regels: 
+	- gebruik geen hoofdlettes
+	- woorden gescheiden door _ 
+	- zinvolle namen 
+	- naamlengte tussen [5..15]
+
+constanten, we maken een onderscheid: 
+- numerieke constanten
+- karakter constanten  
+- strings constanten
+
+
+OPERATOREN EN PRECEDENTIE
+haakjes			: ()
+rekenkundige operatoren : +-*/%
+relationele operatoren  : == != < > <= >=
+assignatie-operator    	: =
+(de)referentie operator : * &
+logische operatoren 	: ! && ||
+bitoperatoren 		: << >> & |
+conditionele operator 	: ?:
+komma operator 		: ,
+
+VARIABELEN
+elk variabele heeft een symbolische naam en die wordt geassocieerd met een geheugenlocatie 
+de waarde van een variable noemen we de rvalue
+het adres waar een variable wordt opgeslaan noemen we de lvalue
+
+bij het declareren van variabelen zetten we eerst het type en dan de naam
+
+er zijn 2 soorten opdrachten: 
+- expressie opdracht, expressie
+- assignatie-opdracht, waarde toekennen aan een variabele
+	- de waarde uit het linkerlid wordt berekent en wordt toegekent aan het rechterlid
+
+
+auto-in/decrement operatoren kunnen zowel post- als prefix gebruikt worden
+variable++ -> de waarde van het variable wordt pas na de expressie geincrement
+++variable -> de waarde van het variabee wordt instant aangepast
+
+CONTROLE UITDRUKKINGEN
+if, else, do ,while en switch uitdrukkingen zijn in C identiek aan deze in Java. 
+
+FUNDAMENTELE DATATYPES
+in C gebruik je volgende sleutelwoorden om een elementair datatype te definieren 
+char, int, float, double, signed, unsigned, long, short en void 
+
+STRUCT'S IDPV KLASSES
+een struckt is een groepering van gegevens van verschillende types die logisch samenhoren,
+een nieuwe struct definieren doe je als volgt: 
+
+struct naam {
+	type_1 naam_1;
+	type_2 naam_2;
+	...
+};
+
+een nieuw variable van dit type aanmaken gaat dan als volgt: 
+
+struct naam var1, var2;
+
+C-idioom:
+typdef struct naam {
+        type_1 naam_1;
+        type_2 naam_2;
+        ...
+} naam;
+
+met deze declaratie kunnen we variables van dit types aanmaken op deze manier: 
+
+naam var1, var2;
+
+
+UNIONS
+een union wordt gebruikt in de plaats van een struc wanneer slechts 1 van de velden op elk ogenblik wordt gebruikt. 
+-> vereiste geheugen = max vereiste geheugen velden van de struct 
+
+ELEMENTAIR I/O
+printf functie (uitvoer)
+syntax : printf(formaat_string, argument1, argument2, ...)
+
+scanf functie (invoer)
+#include <stdio.h> is vereist
+scanf -> toetsenbord
+fscanf -> bestand
+syntax : scanf(formaat_string, argurment1, argument2, ...)
+
+WISKUNDIGE FORMULES
+volgende wiskundige functies zijn gedefinieerd in het header bestand math.h: 
+
+double sqrt(double)
+double pow(double, double)
+double exp(double)
+double log(double)
+double sin(double) 
+double cos(double)
+double tan(double

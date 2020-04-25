@@ -1,0 +1,52 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-Wall",
+                "-D__USE_MINGW_ANSI_STDIO=1",
+                "filecache.c",
+                "hashtable.c",
+                "hashtablecache.c",
+                "main.c",
+                "../leaker/leaker.c",
+                "-o",
+                "hashtable.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "base": "$gcc",
+                // On MSYS2 on Windows, vscode doesn't realise that the paths in compiler errors and warnings
+                // are absolute. The following forces vscode to interpret the paths as absolute.
+                "fileLocation": [
+                    "absolute"
+                ]
+            }
+        },
+        {
+            "label": "run (+ build)",
+            "type": "shell",
+            "command": "./hashtable.exe",
+            "dependsOn": [ "build" ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "base": "$gcc",
+                // On MSYS2 on Windows, vscode doesn't realise that the paths in compiler errors and warnings
+                // are absolute. The following forces vscode to interpret the paths as absolute.
+                "fileLocation": [
+                    "absolute"
+                ]
+            }
+        },
+    ]
+}

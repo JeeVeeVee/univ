@@ -1,0 +1,30 @@
+/* boundrectangle.css
+ * ============================================================
+ * Copyright (C) 2012-2013 Universiteit Gent
+ * 
+ * Bijlage bij het vak 'Programmeren 2'.
+ * 
+ * Auteur: Kris Coolsaet
+ */
+
+HBox {
+    -fx-spacing: 5;
+    -fx-padding: 10;
+}
+
+GridPane {
+    -fx-vgap: 15;
+    -fx-hgap: 10;
+}
+
+.label {
+    -fx-font-weight: bold;
+}
+
+.slider {
+    -fx-show-tick-marks: true
+}
+
+.check-box {
+    -fx-opacity: 1 /* laat een ge'disabled'e checkbox er normaal uitzien */
+}

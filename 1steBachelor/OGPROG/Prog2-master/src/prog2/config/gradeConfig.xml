@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  gradeConfig.xml
+  ============================================================
+  Copyright (C) 2012-2013 Universiteit Gent
+  
+  Bijlage bij het vak 'Programmeren 2'.
+  
+  Auteur: Kris Coolsaet
+-->
+
+<grades>
+    <grade code="dgo">
+        <name>Grootste onderscheiding</name>
+        <points>17</points>
+    </grade>
+    <grade code="go">
+        <name>Grote onderscheiding</name>
+        <points>15</points>
+    </grade>
+    <grade code="o">
+        <name>Onderscheiding</name>
+        <points>13</points>
+    </grade>
+    <grade code="v">
+        <name>Voldoening</name>
+        <points>10</points>
+    </grade>
+    <grade code="ng">
+        <name>Niet geslaagd</name>
+        <points>0</points>
+    </grade>
+</grades>

@@ -1,0 +1,21 @@
+/* timeslottable.css
+ * ============================================================
+ * Copyright (C) 2012-2013 Universiteit Gent
+ * 
+ * Bijlage bij het vak 'Programmeren 2'.
+ * 
+ * Auteur: Kris Coolsaet
+ */
+
+VBox {
+    -fx-padding: 10;
+    -fx-spacing: 10    
+}
+
+HBox {
+    -fx-spacing: 10 
+}
+
+#placeholder {
+    -fx-text-fill: grey
+}

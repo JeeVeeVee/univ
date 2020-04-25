@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  AboutTwo.fxml
+  ============================================================
+  Copyright (C) 2012-2013 Universiteit Gent
+  
+  Bijlage bij het vak 'Programmeren 2'.
+  
+  Auteur: Kris Coolsaet
+-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+
+<VBox id="mainPanel"  xmlns:fx="http://javafx.com/fxml" fx:controller="prog2.config.AboutTwoCompanion">
+  <HBox id="topPanel" prefHeight="-1.0" prefWidth="-1.0">
+      <ImageView fitHeight="0.0" fitWidth="0.0" pickOnBounds="true" preserveRatio="true">
+          <Image url="@../images/ugentlogo.png"/>
+      </ImageView>
+      <VBox id="rightPanel">
+          <Label id="title" text="MyApp"/>
+          <Label fx:id="version" text="Versie &lt;ver&gt;"/>
+          <Label id="caption" text="Uw systeemadministrator is"/>
+          <Label fx:id="email" text="&lt;email&gt;"/>
+      </VBox>
+  </HBox>
+  <Button id="closeButton" mnemonicParsing="false" onAction="#doClose" text="OK" />
+  <stylesheets>
+    <URL value="@about.css" />
+  </stylesheets>
+</VBox>

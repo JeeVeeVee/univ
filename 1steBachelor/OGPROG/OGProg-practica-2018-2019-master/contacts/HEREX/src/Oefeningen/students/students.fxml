@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="603.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Oefeningen.students.StudentsControlla">
+   <children>
+      <Label layoutX="25.0" layoutY="22.0" prefHeight="16.0" prefWidth="97.0" text="Cursusnr:" />
+      <TextField fx:id="cursusnr" layoutX="114.0" layoutY="17.0" />
+      <Button layoutX="312.0" layoutY="17.0" mnemonicParsing="false" onAction="#zoek" text="zoek" />
+      <TableView fx:id="tabel" layoutX="25.0" layoutY="73.0" prefHeight="512.0" prefWidth="787.0">
+        <columns>
+          <TableColumn fx:id="voornaam" prefWidth="302.0" text="voornaam" />
+          <TableColumn fx:id="achternaam" prefWidth="353.0" text="achternaam" />
+            <TableColumn fx:id="score" prefWidth="131.0" text="score" />
+        </columns>
+      </TableView>
+      <Label fx:id="cursusnaam" layoutX="509.0" layoutY="22.0" prefHeight="16.0" prefWidth="206.0" />
+   </children>
+</AnchorPane>

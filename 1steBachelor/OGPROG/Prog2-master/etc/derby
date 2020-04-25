@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# Client die connecteert met Derby.
+# oproepen met: derby <database>
+
+# Volgende drie variabelen moeten correct zijn ingesteld (zonder / op het einde)
+# Installatiemap van java
+export JAVA_HOME=/usr/lib/jvm/jdk-11.0.1+13
+
+# Basismap waarin Derby jouw databankbestanden moet bewaren
+export DERBY_SYSTEM_HOME=/public/db
+
+# Map waar de Derby-scripts zich bevinden
+export DERBY_HOME=/usr/share/derby
+
+#
+export DATABASE=$1
+if [ X$1 = X ] 
+then
+  DATABASE=prog2
+fi
+
+#
+JAVA_ARGS="-Dderby.system.home=${DERBY_SYSTEM_HOME} -Dij.user=prog2 -Dij.password=sesamopenu -Dij.protocol=jdbc:derby: -Dij.database=$DATABASE;create=true" $DERBY_HOME/ij

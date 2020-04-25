@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<?import java.net.URL?>
+<AnchorPane fx:controller="JavaFXComponenten.Tabellen.editeerbareTabel.Controlla"
+            maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" minHeight="-Infinity"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@students.css"/>
+    </stylesheets>
+    <children>
+      <TableView fx:id="tabel" layoutX="11.0" layoutY="69.0" prefHeight="311.0" prefWidth="575.0">
+        <columns>
+          <TableColumn fx:id="fam" prefWidth="171.0" text="Familienaam" />
+          <TableColumn fx:id="naam" prefWidth="206.0" text="Voornaam" />
+            <TableColumn fx:id="result" prefWidth="73.0" text="Punten" />
+        </columns>
+      </TableView>
+      <TextField onAction="#update" fx:id="coursenr" layoutX="107.0" layoutY="14.0" prefHeight="26.0" prefWidth="110.0" />
+      <Label layoutX="23.0" layoutY="19.0" prefHeight="16.0" prefWidth="84.0" text="Course nr." />
+      <Label fx:id="courseName" text="" />
+   </children>
+</AnchorPane>

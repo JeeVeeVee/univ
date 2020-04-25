@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@proglangs.css" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prog2.proglangs.ProgLangsSimpleCompanion">
+   <top>
+      <Label id="title" text="Mijn voorkeuren" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="nameColumn" minWidth="100.0" prefWidth="528.0" text="Programmeertaal" />
+          <TableColumn fx:id="checkedColumn" minWidth="10.0" prefWidth="70.0" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+   <bottom>
+       <HBox>
+        <Button mnemonicParsing="false" onAction="#updatePreferences" text="Opslaan" BorderPane.alignment="CENTER" />
+       </HBox>
+   </bottom>
+</BorderPane>

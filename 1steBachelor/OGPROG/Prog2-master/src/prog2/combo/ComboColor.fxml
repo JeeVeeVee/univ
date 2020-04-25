@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.paint.Color?>
+<?import java.lang.Boolean?>
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@combo.css"
+      xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="prog2.combo.ComboColorCompanion">
+    <ComboBox fx:id="comboBox" prefWidth="150.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <Color fx:value="RED"/>
+                <Color fx:value="GREEN"/>
+                <Color fx:value="BLUE"/>
+                <Color fx:value="CYAN"/>
+                <Color fx:value="MAGENTA"/>
+                <Color fx:value="YELLOW"/>
+                <Color fx:value="BLACK"/>
+                <Color fx:value="WHITE"/>
+            </FXCollections>
+        </items>
+        <editable>        <!-- Opgelet: mag niet als attribuut. BUG? -->
+            <Boolean fx:value="true"/>
+        </editable>
+        <value>
+            <Color fx:value="GREEN"/>
+        </value>
+    </ComboBox>
+    <Circle fx:id="circle" fill="GREEN" radius="50.0"/>
+</HBox>

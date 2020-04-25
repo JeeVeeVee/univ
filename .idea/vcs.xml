@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/1steBachelor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/1steBachelor/PythonScripts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/1steBachelor/databanken" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/1steBachelor/databanken/DERP" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2deBachelor/functioneelprogrammeren/oefeningen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2deBachelor/functioneelprogrammeren/oefeningen/projecten/frogger" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2deBachelor/functioneelprogrammeren/oefeningen/projecten/minesweeper-assignment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2deBachelor/functioneelprogrammeren/oefeningen/projecten/test/01803156" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2deBachelor/functioneelprogrammeren/projecten/frogger" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2deBachelor/functioneelprogrammeren/projecten/minesweeper-assignment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2deBachelor/functioneelprogrammeren/projecten/plants-vs-zombies-assignment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2deBachelor/functioneelprogrammeren/projecten/test/01803156" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2deBachelor/systeemprogrammeren/oefensets" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2deBachelor/systeemprogrammeren/projectC++/project-groep12" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2deBachelor/systeemprogrammeren/projectC/project-groep12" vcs="Git" />
+  </component>
+</project>

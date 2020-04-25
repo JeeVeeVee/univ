@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  DateTime.fxml
+  ============================================================
+  Copyright (C) 2012-2013 Universiteit Gent
+  
+  Bijlage bij het vak 'Programmeren 2'.
+  
+  Auteur: Kris Coolsaet
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import java.net.URL?>
+<fx:root type="javafx.scene.layout.HBox" fx:id="hbox" alignment="CENTER" fillHeight="false" minHeight="-1.0"
+         prefHeight="-1.0" prefWidth="-1.0" spacing="5.0" xmlns:fx="http://javafx.com/fxml">
+  <padding>
+    <Insets bottom="15.0" left="20.0" right="20.0" top="15.0"/>
+  </padding>
+  <stylesheets>
+    <URL value="@datetime.css"/>
+  </stylesheets>
+  <Label text="Datum:"/>
+  <TextField fx:id="day" prefWidth="36.0"/>
+  <Label text="-"/>
+  <TextField fx:id="month" prefWidth="36.0"/>
+  <Label text="-"/>
+  <TextField fx:id="year" prefWidth="72.0"/>
+  <Label text="Tijd:"/>
+  <TextField fx:id="hours" prefWidth="36.0"/>
+  <Label text=":"/>
+  <TextField fx:id="minutes" prefWidth="36.0"/>
+  <Button mnemonicParsing="false" onAction="#nowPushed" prefHeight="22.0" text="Nu"/>
+</fx:root>

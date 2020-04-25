@@ -1,0 +1,36 @@
+S = winst spaarboek
+S = 100000
+A:= winst aandeel
+F:= winst beleggingsfonds
+
+P(A = 500) = 0,4
+P(A = 1000) 0,3
+P(A = -1000) = 0,3
+
+P(F = 200) = 0,4
+P(F = 250) = 0.4
+P(F = -400) = 0,2
+
+
+verwachte winst A = 200
+verwachte winst F = 62,5
+
+
+in R: 
+2 vectoren maken: 1 met kansen en 1 met overeenkomende waarden,
+verwachtingswaarde is dan het inproduct van die 2 vectroren 
+
+pA <- C(0.4, 0.3, 0.3)
+A <- C(500, 1000, -1000)
+
+verwachtingswaardeA = (sum(pA * A))
+VarWA  = sum(pA * (A - verwachtingswaardeA^2))
+-> KOMT UIT FORMULE Var(x) = E[(x - E[x])^2]
+
+
+3) 
+formule:
+    1) Cov(X, Y) = cor(X, Y) * sqrt(Var(X)*Var(Y))
+die moet je gwn implementeren eh ja tam ventje
+
+

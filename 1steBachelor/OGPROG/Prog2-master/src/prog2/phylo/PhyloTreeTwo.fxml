@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PhyloTreeTwo.fxml
+  ============================================================
+  Copyright (C) 2012-2013 Universiteit Gent
+  
+  Bijlage bij het vak 'Programmeren 2'.
+  
+  Auteur: Kris Coolsaet
+-->
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.HBox?>
+<HBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="prog2.phylo.PhyloTreeTwoCompanion">
+  <TreeView id="" fx:id="treeView" prefHeight="300.0" prefWidth="400.0"/>
+  <Label fx:id="label" alignment="CENTER" prefWidth="300.0" text="Label"/>
+</HBox>

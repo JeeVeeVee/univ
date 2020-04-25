@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<fx:root type="GridPane" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="prog2.contacts.gui.PersonInfoCompanion">
+    <columnConstraints>
+        <ColumnConstraints minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints minWidth="10.0" prefWidth="140.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+    </rowConstraints>
+    <Label text="%table.persons.firstName"/>
+    <TextField fx:id="firstName" prefHeight="22.0" prefWidth="140.0" GridPane.columnIndex="1"
+               GridPane.hgrow="ALWAYS"/>
+    <Label text="%table.persons.name" GridPane.rowIndex="1"/>
+    <TextField fx:id="name" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1"/>
+</fx:root>

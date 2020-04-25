@@ -1,0 +1,4 @@
+#!/bin/bash
+#
+MODULE_PATH=/usr/lib/jvm/javafx-sdk-11.0.1/lib/
+java --module-path=$MODULE_PATH --add-modules=ALL-MODULE-PATH $@

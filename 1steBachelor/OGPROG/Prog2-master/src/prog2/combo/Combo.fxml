@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import java.lang.*?>
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@combo.css"
+      xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="prog2.combo.ComboCompanion">
+    <ComboBox fx:id="comboBox" prefWidth="150.0"
+              editable="true" value="green">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="red"/>
+                <String fx:value="green"/>
+                <String fx:value="blue"/>
+                <String fx:value="cyan"/>
+                <String fx:value="magenta"/>
+                <String fx:value="yellow"/>
+                <String fx:value="black"/>
+                <String fx:value="white"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <Circle fx:id="circle" fill="GREEN" radius="50.0"/>
+</HBox>

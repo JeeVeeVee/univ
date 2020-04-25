@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  applicationConfig.xml
+  ============================================================
+  Copyright (C) 2012-2013 Universiteit Gent
+  
+  Bijlage bij het vak 'Programmeren 2'.
+  
+  Auteur: Kris Coolsaet
+-->
+
+<applicationConfig version="2.0.5">
+    <sysAdminEmail>admin.sys@yourcompany.com</sysAdminEmail>
+</applicationConfig>
+

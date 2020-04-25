@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ButtonsSix.fxml
+  ============================================================
+  Copyright (C) 2012-2013 Universiteit Gent
+  
+  Bijlage bij het vak 'Programmeren 2'.
+  
+  Auteur: Kris Coolsaet
+-->
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import prog2.buttons.*?>  <!-- om één of andere reden moet er hier een wildcard staan (bug?) -->
+<?import java.net.URL?>
+
+<AnchorPane id="AnchorPane" prefHeight="171.0" prefWidth="319.0" styleClass="mainFxmlClass"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="prog2.buttons.ButtonsSixCompanion">
+    <stylesheets>
+        <URL value="@disabledEnabled.css"/>
+    </stylesheets>
+    <Label fx:id="blzLabel" alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="160.0" layoutY="14.0"
+           prefHeight="143.0" prefWidth="146.0" text="Blz 1"/>
+
+    <IncrementButton fx:id="minus10" increment="-10" layoutX="36.0" layoutY="14.0" mnemonicParsing="false"
+                     onAction="#doButton" text="Min 10"/>
+    <IncrementButton fx:id="minus1" increment="-1" layoutX="36.0" layoutY="55.0" mnemonicParsing="false"
+                     onAction="#doButton" text="Min 1"/>
+    <IncrementButton fx:id="plus1" increment="1" layoutX="36.0" layoutY="94.0" mnemonicParsing="false"
+                     onAction="#doButton" text="Plus 1"/>
+    <IncrementButton fx:id="plus10" increment="10" layoutX="36.0" layoutY="130.0" mnemonicParsing="false"
+                     onAction="#doButton" text="Plus 10"/>
+</AnchorPane>

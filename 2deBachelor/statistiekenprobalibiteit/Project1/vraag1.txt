@@ -1,0 +1,19 @@
+De afstand van de wandelaar na x stappen ten opzichte van zijn startpunt is binomiaal verdeeld met p = 0,5 en n = x. 
+
+
+
+Om 3 meter verwijdert te zijn van zijn start punt moet de man 4 stappen meer vooruit (of achteruit) zetten dan hij er achteruit (of vooruit) heeft gezet. 
+
+
+
+De kans dat de man meer dan 3 meter verwijderd is van zijn startpunt na x stappen wordt gegeven door: 1 - P(de man is minder dan 3 meter verwijderd van zijn startpunt). 
+
+
+
+Dat wil zeggen dat we op zoek moeten naar de kleinete x waarvoor geldt waarvoor de som van alle kansen P(de man eindigt op y) minstens 95% is, met: 
+
+. Door een R scirpt vond ik waarde 16278 voor x. Dit wil zeggen dat de man 20596 stappen moet zetten opdat hij 95% kans heeft om verder dan 3 meter (4 stappen van 0,75 meter) verwijderd te zijn van zijn startpunt. We merken op dat er een groot verschil is tussen de even en oneven waarden die vlak naast elkaar liggen, dit komt omdat oneven waarden 9 mogelijke posities moeten uitsluiten en even waarden “slechts” 8.
+
+
+
+Tijdens de simulaties echter, bleek dat de kans dat de man op meer dan 3 meter eindigd na 20600 stappen dichter ligt bij 97%, na wat numeriek werk vond ik dat de waarde 6000 veel dichter kwam bij de 95%procent die we moesten bekomen. 

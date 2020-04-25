@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  BoundRectangle.fxml
+  ============================================================
+  Copyright (C) 2012-2013 Universiteit Gent
+  
+  Bijlage bij het vak 'Programmeren 2'.
+  
+  Auteur: Kris Coolsaet
+-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import java.net.URL?>
+<HBox prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="prog2.bindings.BoundRectangleCompanion">
+  <stylesheets>
+    <URL value="@boundrectangle.css" />
+  </stylesheets>
+    <GridPane alignment="CENTER" vgap="10.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="-1.0" minHeight="10.0" prefHeight="-1.0" vgrow="NEVER"/>
+            <RowConstraints maxHeight="-1.0" minHeight="10.0" prefHeight="-1.0" vgrow="NEVER"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER"/>
+        </rowConstraints>
+        <Label text="Breedte" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Slider fx:id="width" value="50.0" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Label text="Hoogte" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Slider fx:id="height" value="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <CheckBox fx:id="isSquare" disable="true" mnemonicParsing="false" text="Vierkant" GridPane.columnSpan="2"
+                  GridPane.rowIndex="2"/>
+    </GridPane>
+    <VBox alignment="CENTER" prefHeight="110.0" prefWidth="110.0">
+        <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" stroke="BLACK"
+                   strokeType="INSIDE" width="100.0"/>
+    </VBox>
+</HBox>

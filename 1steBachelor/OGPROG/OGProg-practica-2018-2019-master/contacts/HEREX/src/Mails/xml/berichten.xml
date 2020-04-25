@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Berichten die worden getoond in het 'Mails'-venster. -->
+
+<listofmails>
+    <mail>
+        <subject>Lorem ipsum</subject>
+        <sender>Zoe Cameron</sender>
+        <time>2015-02-24T09:12:22</time>
+        <message>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt, orci ac finibus convallis, quam mi ullamcorper augue, a varius nunc nulla ut ante. Etiam vehicula id diam a gravida. Nam euismod neque dignissim libero placerat, vel facilisis libero mattis. In maximus nulla nec turpis fermentum mollis. Phasellus nec arcu gravida, tempus erat sit amet, tempor lectus.
+
+            Cras porta a sem a vestibulum. Maecenas nec dui lectus.</message>
+    </mail>
+    <mail>
+        <subject>Sed ac lacus</subject>
+        <sender>Zoe Cameron</sender>
+        <time>2015-02-24T11:55:11</time>
+        <message>
+            Vestibulum dapibus, massa eu ornare suscipit, ante lectus imperdiet justo, a pulvinar dolor turpis in urna. Proin ac mi sed nisl rutrum tincidunt ac ac sapien. Vestibulum vitae efficitur tortor. Cras enim dui, tincidunt at ultrices vitae, dictum dapibus massa.
+
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed felis augue, vehicula ac dignissim vel, molestie at justo. Sed eget purus vel mauris imperdiet ullamcorper. Donec maximus faucibus neque vitae aliquam. Nam tempor vitae magna et sollicitudin. Duis at tincidunt neque, ac dapibus diam.
+
+            Cras hendrerit imperdiet posuere. Pellentesque ac nulla a neque venenatis faucibus id sit amet libero.</message>
+    </mail>
+    <mail>
+        <subject>In hac habitasse</subject>
+        <sender>Zoe Cameron</sender>
+        <time>2015-02-25T08:11:21</time>
+        <message>
+            Ut vitae arcu dictum, tincidunt tortor ac, placerat nisi. In laoreet dui elit, quis auctor libero efficitur eget. Praesent venenatis metus mollis nibh porta congue quis sit amet ante. Vivamus justo justo, pellentesque id leo nec, molestie eleifend erat. Vestibulum vehicula nisl at bibendum luctus.
+
+            Nulla at nisl a sem luctus viverra sed a quam. Curabitur blandit faucibus odio. Proin suscipit pulvinar purus, et laoreet libero cursus a. Curabitur euismod sem quis elit maximus bibendum. Suspendisse ullamcorper arcu ut vehicula laoreet. Fusce id magna vitae leo fringilla venenatis tempus sed massa. Quisque mattis tristique placerat.
+
+            Ut feugiat varius lacus et imperdiet. In non tellus ut lorem elementum ultricies.</message>
+    </mail>
+    <mail>
+        <subject>Nulla egestas rhincus</subject>
+        <sender>Zoe Cameron</sender>
+        <time>2015-02-25T12:41:22</time>
+        <message>
+            Integer non felis non mauris luctus suscipit. Nunc vel convallis dui, at commodo turpis. Suspendisse non tristique libero, vel pharetra nisi. Curabitur sollicitudin ac libero quis lacinia. Curabitur ultricies nibh quis nisi congue varius. Vivamus semper ut libero vitae vestibulum. Etiam condimentum justo a ligula iaculis blandit.</message>
+    </mail>
+    <mail>
+        <subject>Re: Sed ac lacus</subject>
+        <sender>Adam Powell</sender>
+        <time>2015-02-27T21:23:22</time>
+        <message>
+            Maecenas eu turpis rutrum, ullamcorper ante ut, congue nibh. Quisque sollicitudin quam massa, a elementum tortor iaculis eu. Proin et metus eget justo commodo feugiat eu congue lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam tortor, vulputate id consequat ac, suscipit quis diam. Donec ut enim nunc. Cras congue arcu sit amet egestas dapibus.
+
+            Pellentesque volutpat volutpat feugiat.</message>
+    </mail>
+    <mail>
+        <subject>Re: Nulla egestas rhincus</subject>
+        <sender>Adam Powell</sender>
+        <time>2015-02-27T21:47:22</time>
+        <message>
+            Nam et libero porttitor, porttitor libero sit amet, sodales est. Etiam vel lectus in eros suscipit luctus. Vestibulum porttitor posuere lacinia. Sed non elementum sem. Phasellus consectetur mollis tempor. Pellentesque eget arcu mi. Morbi tincidunt sagittis nulla sed mattis. Duis at tortor pulvinar, suscipit nunc condimentum, tempus lorem.
+
+            Duis mollis, nisl a ultrices pretium, justo mauris dapibus purus, vel condimentum erat ante sed metus. Donec eu sodales nibh. Donec tempus imperdiet scelerisque.</message>
+    </mail>
+    <mail>
+        <subject>Re: Re: Lorem ipsum</subject>
+        <sender>Ruth Butler </sender>
+        <time>2015-02-24T10:03:22</time>
+        <message>
+            Praesent ac imperdiet turpis. Duis quis lorem nec risus dictum commodo nec id dolor. Sed non nisi suscipit, feugiat urna nec, cursus nisi. Quisque dignissim enim ac justo imperdiet, ac sagittis dui porttitor.
+
+            Phasellus vitae sapien metus. Curabitur imperdiet bibendum sapien, ac dignissim est faucibus ut. In efficitur neque vitae ante pretium, at efficitur augue porta. Etiam ac iaculis enim. Quisque tristique fermentum fringilla.</message>
+    </mail>
+    <mail>
+        <subject>Re: Sed ac lacus</subject>
+        <sender>Ruth Butler </sender>
+        <time>2015-02-24T14:22:22</time>
+        <message>
+            Proin commodo, ante nec iaculis euismod, magna elit congue lacus, convallis laoreet risus sem nec magna. Etiam pellentesque rhoncus dui. Morbi metus velit, ornare sed risus vel, dictum rutrum eros. Sed in diam pharetra, accumsan ligula in, mollis turpis. Nunc nunc est, faucibus sit amet turpis sed, iaculis commodo enim. Nullam at nisl ut augue egestas iaculis in fermentum dui.
+
+            Phasellus pellentesque mattis felis vitae auctor. Nulla mollis fermentum nibh mattis maximus. Vivamus ac hendrerit ante. </message>
+    </mail>
+    <mail>
+        <subject>Re: Sed maximus sem</subject>
+        <sender>Ruth Butler </sender>
+        <time>2015-02-25T09:15:22</time>
+        <message>
+            Sed vitae dui mattis tellus ullamcorper tempor in sit amet elit. Etiam molestie est eu metus sagittis tristique. Nam porttitor magna eu nisl ultrices, a scelerisque mauris rutrum. Sed rhoncus mattis arcu, non hendrerit quam elementum ut. Praesent tincidunt justo odio, eget pharetra risus dictum ac.
+
+            Sed lacinia faucibus sapien. Vivamus sollicitudin condimentum sapien id semper.
+        </message>
+    </mail>
+    <mail>
+        <subject>Re: Sed maximus sem</subject>
+        <sender>Madeleine Gibson</sender>
+        <time>2015-02-25T11:33:22</time>
+        <message>
+            Maecenas auctor sapien id interdum egestas. Integer rhoncus velit a nulla bibendum, lacinia euismod elit mollis. Aenean purus est, feugiat ut mi non, rhoncus eleifend lorem. Fusce bibendum, tortor quis convallis pellentesque, leo nisi maximus tortor, tincidunt lobortis ante mauris id sapien.
+
+            Aliquam nec tempor nisl. Ut sit amet fringilla justo. Morbi a purus purus. Donec mattis magna ut neque auctor, id egestas justo luctus. Pellentesque tempus sem tristique, aliquet risus at, laoreet ipsum.
+
+            Morbi tincidunt tortor nisi, non facilisis urna suscipit at. Donec nec libero justo. Cras porttitor imperdiet nisi, eget varius dui pharetra sit amet. In a neque vitae odio placerat convallis. Nunc pretium orci vitae orci pretium, ut lacinia eros varius. Integer eget aliquam elit, eu fermentum elit.</message>
+    </mail>
+    <mail>
+        <subject>Re: Lorem ipsum</subject>
+        <sender>Madeleine Gibson</sender>
+        <time>2015-02-25T12:21:22</time>
+        <message>
+            Duis commodo nibh non ullamcorper scelerisque. Nullam lectus ante, efficitur vitae mi feugiat, pretium vestibulum mi. Integer ac sapien eleifend, porttitor eros a, euismod nunc. Praesent blandit malesuada lectus ac tincidunt. Vivamus metus nisi, venenatis ac consequat ac, elementum sit amet risus. Nam sed tincidunt eros, et lobortis magna. Proin ut lacinia metus. Cras tortor tellus, maximus quis risus eget, mollis pulvinar diam.
+
+            Curabitur dignissim vel ipsum at hendrerit. Ut mollis efficitur mi, sed interdum purus laoreet elementum. In iaculis risus neque, sit amet auctor lacus efficitur in. Suspendisse quis congue velit. Phasellus a tellus erat. Proin efficitur ultricies urna. Fusce eros ex, ullamcorper eu vehicula id, dignissim vitae dolor. Pellentesque et facilisis arcu.</message>
+    </mail>
+    <mail>
+        <subject>Sed maximus sem</subject>
+        <sender>Julia Powell</sender>
+        <time>2015-02-24T08:23:22</time>
+        <message>
+            Cras purus nibh, rutrum id ultricies ut, ullamcorper at arcu. Duis dignissim rutrum elit at tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vel elit quis nunc fermentum luctus vel id augue. Etiam malesuada quam at sem mollis auctor.
+
+            Mauris consectetur auctor nulla. Morbi molestie interdum blandit. Aliquam neque massa, vehicula ut turpis ac, vehicula vulputate nisi. Praesent vitae justo eget ante blandit bibendum a et nulla. Mauris consequat, sem eget fringilla volutpat, magna tellus efficitur leo, at gravida elit turpis in elit. Sed lobortis et dolor id dictum. Praesent tincidunt sapien fermentum laoreet mattis. Cras dapibus tellus eget urna scelerisque ornare. Mauris risus magna, consequat quis fringilla et, ornare nec lectus. Aenean fringilla, mauris sed dapibus commodo, nunc enim ultrices metus, eu sodales libero ipsum eu massa. Pellentesque egestas facilisis pellentesque.</message>
+    </mail>
+    <mail>
+        <subject>Re: Lorem ipsum</subject>
+        <sender>Julia Powell</sender>
+        <time>2015-02-24T10:15:22</time>
+        <message>
+            Nullam at ante quis nunc convallis ullamcorper. Cras diam augue, aliquam dictum tincidunt eu, viverra in massa. In id urna lacus. Morbi efficitur mi at urna lobortis sodales. Vestibulum vitae accumsan nisl. Nullam convallis sit amet ex quis tincidunt.
+
+            Mauris tempus elit at urna tempor, ut ultrices arcu ultrices. Nulla vitae nunc et metus ultricies placerat nec a tellus. Integer at bibendum massa. Pellentesque pretium nisl sed lacinia dignissim. Morbi lobortis posuere posuere.</message>
+    </mail>
+    <mail>
+        <subject>Re: Sed ac lacus</subject>
+        <sender>Julia Powell</sender>
+        <time>2015-02-24T11:23:22.001</time>
+        <message>
+            Praesent a varius lorem, sit amet pulvinar turpis. Aliquam a odio vitae magna feugiat convallis. Suspendisse sollicitudin velit vitae tortor tincidunt, non viverra nisl faucibus. Donec aliquam velit et ipsum lacinia bibendum. Proin efficitur felis lectus, ut malesuada magna molestie non.
+
+            Vivamus porta, mi at eleifend cursus, justo est hendrerit ante, ut placerat ipsum ante in nunc. Morbi vel urna ut purus vulputate molestie.</message>
+    </mail>
+    <mail>
+        <subject>Re: Re: Lorem ipsum</subject>
+        <sender>Julia Powell</sender>
+        <time>2015-02-25T05:59:22.871</time>
+        <message>
+            Donec congue pretium ipsum non consequat. Fusce id metus pharetra nibh gravida rhoncus. Sed et velit quam. Mauris varius nisl vitae dui suscipit tincidunt. Donec at porttitor ipsum.
+
+            Donec at suscipit nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam ut consectetur nisl. In eleifend ligula vel odio luctus, vitae facilisis odio scelerisque.</message>
+    </mail>
+    <mail>
+        <subject>Re: Sed ac lacus</subject>
+        <sender>Carolyn Cameron</sender>
+        <time>2015-02-25T10:05:22.918</time>
+        <message>
+            Fusce sed erat ut leo rutrum bibendum luctus vitae nibh. Sed rhoncus condimentum congue. Aenean sem quam, lobortis eu egestas eget, cursus ac sem. Sed lacinia vitae erat nec lacinia. Aenean pellentesque lacus non ligula efficitur pulvinar.
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+            Nunc malesuada mi at vulputate pulvinar. Sed ullamcorper rhoncus diam. Integer id efficitur ligula. Sed malesuada commodo tellus. Sed vitae lorem ante. Nam eget facilisis lorem. In eget gravida nulla.</message>
+    </mail>
+    <mail>
+        <subject>Re: Lorem ipsum</subject>
+        <sender>Carolyn Cameron</sender>
+        <time>2015-02-25T11:12:22.231</time>
+        <message>
+            Cras convallis neque eget augue posuere, a volutpat urna faucibus.
+
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum volutpat ante nec elit lobortis gravida. Donec auctor eget arcu non hendrerit. Phasellus in velit ac eros laoreet mattis. Duis nec lacus pellentesque, pretium odio et, tincidunt turpis. Nulla metus elit, lobortis quis elementum non, fermentum eget leo.
+            Duis a odio eu nibh viverra euismod ut non lorem.
+        </message>
+    </mail>
+    <mail>
+        <subject>Re: Sed ac lacus</subject>
+        <sender>Carolyn Cameron</sender>
+        <time>2015-02-25T11:33:22.715</time>
+        <message>
+            Vestibulum fringilla, dui vel dignissim porta, arcu elit rutrum tellus, eu ultrices eros quam sit amet dui. Maecenas vitae posuere arcu. Sed sed enim quis neque bibendum mattis. Aenean a tincidunt nunc. Nulla ultrices mollis ligula, at porttitor justo rhoncus eu. Proin sit amet enim in metus eleifend luctus eget in lectus.
+
+            Curabitur egestas velit et accumsan sagittis. Donec vitae porta orci. Sed sagittis odio a purus fermentum, vel lacinia lacus hendrerit. In rutrum consectetur sapien, et feugiat risus cursus sit amet. Proin laoreet, urna ut sodales luctus, ipsum dui mollis nunc, sit amet maximus tortor ipsum eget justo.
+
+            Phasellus vulputate cursus mi, quis pretium urna pulvinar ac. Nullam rhoncus in leo vitae gravida. In tincidunt tincidunt tristique. Aliquam varius, lorem vitae interdum iaculis, diam augue vulputate ante, a lacinia nulla tellus sit amet lorem.</message>
+    </mail>
+    <mail>
+        <subject>Re: Lorem ipsum</subject>
+        <sender>Carolyn Cameron</sender>
+        <time>2015-02-25T12:16:22.834</time>
+        <message>
+            Curabitur porttitor odio dolor, et posuere nibh mattis in. Quisque at vestibulum nisl. Etiam non nibh placerat, dignissim nunc a, luctus dolor. Donec nisi turpis, suscipit id nisl ac, bibendum vestibulum arcu. Aliquam vel eros ligula. Sed et blandit lorem. Ut pellentesque nunc vitae tortor commodo volutpat. In felis nisl, congue non erat non, varius dapibus mauris.
+
+            Nam viverra eget nisi faucibus congue. Suspendisse iaculis tincidunt libero cursus tempor. Nam dapibus dapibus augue, a consequat neque vulputate aliquet. Quisque commodo eros eget malesuada varius.</message>
+    </mail>
+</listofmails>

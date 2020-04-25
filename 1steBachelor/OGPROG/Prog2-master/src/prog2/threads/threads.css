@@ -1,0 +1,17 @@
+HBox {
+    -fx-spacing: 10;
+    -fx-padding: 10;
+    -fx-alignment: center;
+}
+
+VBox {
+    -fx-spacing: 10;
+}
+
+#progressPanel {
+    -fx-alignment: center;
+}
+
+GridPane {
+    -fx-vgap: 10;
+}

@@ -1,0 +1,37 @@
+/* about.css
+ * ============================================================
+ * Copyright (C) 2012-2013 Universiteit Gent
+ * 
+ * Bijlage bij het vak 'Programmeren 2'.
+ * 
+ * Auteur: Kris Coolsaet
+ */
+
+#mainPanel {
+    -fx-spacing: 10;
+    -fx-padding: 10;    
+    -fx-alignment: center;
+}
+
+#topPanel {
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+#rightPanel {
+    -fx-spacing: 3;
+    -fx-alignment: center;
+}
+
+#title {
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+}
+
+#caption {
+    -fx-padding: 30 0 0 0 ;       
+}
+
+#email {
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Persons.fxml
+-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.lang.Double?>
+<?import java.net.URL?>
+<VBox prefHeight="300.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" >
+    <stylesheets>
+        <URL value="@contacts.css"/>
+    </stylesheets>
+    <HBox>
+        <Label text="%label.name.starts.with"/>
+        <TextField fx:id="textField" minHeight="20.0" prefWidth="300.0" HBox.hgrow="ALWAYS"/>
+        <Button styleClass="searchButton" onAction="#doSearch" defaultButton="true">
+            <tooltip><Tooltip text="%button.search.tooltip"/></tooltip>
+        </Button>
+        <Button styleClass="newButton" onAction="#doCreate">
+            <tooltip><Tooltip text="%button.new.person.tooltip"/></tooltip>
+        </Button>
+    </HBox>
+    <fx:define>
+        <Double fx:value="40.0" fx:id="bcWidth"/>
+    </fx:define>
+    <TableView fx:id="tableView" VBox.vgrow="ALWAYS">
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+        </columnResizePolicy>
+        <columns>
+            <TableColumn fx:id="lastNameColumn" prefWidth="250.0" text="%table.persons.name"/>
+            <TableColumn fx:id="firstNameColumn" prefWidth="150.0" text="%table.persons.firstName"/>
+            <TableColumn fx:id="editButtonColumn" maxWidth="$bcWidth" minWidth="$bcWidth" prefWidth="$bcWidth"/>
+            <TableColumn fx:id="deleteButtonColumn" maxWidth="$bcWidth" minWidth="$bcWidth" prefWidth="$bcWidth"/>
+        </columns>
+        <placeholder>
+            <Label id="placeholder" text="%placeholder.empty"/>
+        </placeholder>
+    </TableView>
+</VBox>

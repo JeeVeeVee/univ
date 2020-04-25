@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  phylo_example.xml
+  ============================================================
+  Copyright (C) 2012-2013 Universiteit Gent
+  
+  Bijlage bij het vak 'Programmeren 2'.
+  
+  Auteur: Kris Coolsaet
+-->
+
+<!--
+  Met dank aan 
+
+Michiel Van Bel
+VIB Department of Plant Systems Biology, Ghent University
+Technologiepark 927, 9052 Gent, BELGIUM
+
+  Die ons dit bestand heeft bezorgd.
+-->
+<phyloxml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.phyloxml.org/1.00/phyloxml.xsd"
+          xmlns="http://www.phyloxml.org">
+    <phylogeny rooted="false">
+        <clade>
+            <clade>
+                <name>GreenPlants</name>
+                <branch_length>0.09</branch_length>
+                <clade>
+                    <name>LandPlants</name>
+                    <branch_length>0.09</branch_length>
+                    <clade>
+                        <name>VascularPlants</name>
+                        <branch_length>0.09</branch_length>
+                        <clade>
+                            <name>Angiosperms</name>
+                            <branch_length>0.09</branch_length>
+                            <clade>
+                                <name>Eudicots</name>
+                                <branch_length>0.09</branch_length>
+                                <clade>
+                                    <name>Rosids</name>
+                                    <branch_length>0.09</branch_length>
+                                    <clade>
+                                        <name>Fabids</name>
+                                        <branch_length>0.09</branch_length>
+                                        <clade>
+                                            <name>N2FixingClade</name>
+                                            <branch_length>0.09</branch_length>
+                                            <clade>
+                                                <name>Papilionoideae</name>
+                                                <branch_length>0.09</branch_length>
+                                                <clade>
+                                                    <name>Galegoids</name>
+                                                    <branch_length>0.09</branch_length>
+                                                    <clade>
+                                                        <name>Lotus japonicus</name>
+                                                        <branch_length>0.1</branch_length>
+                                                        <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Lotus_japonicus_box.jpg</uri>
+                                                    </clade>
+                                                    <clade>
+                                                        <name>Medicago truncatula</name>
+                                                        <branch_length>0.1</branch_length>
+                                                        <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Medicago_truncatula_box.jpg</uri>
+                                                    </clade>
+                                                </clade>
+                                                <clade>
+                                                    <name>Glycine max</name>
+                                                    <branch_length>0.19</branch_length>
+                                                    <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Glycine_max_box.jpg</uri>
+                                                </clade>
+                                            </clade>
+                                            <clade>
+                                                <name>Rosaceae</name>
+                                                <branch_length>0.19</branch_length>
+                                                <clade>
+                                                    <name>Malus domestica</name>
+                                                    <branch_length>0.09</branch_length>
+                                                    <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Malus_domestica_box.jpg</uri>
+                                                </clade>
+                                                <clade>
+                                                    <name>Fragaria vesca</name>
+                                                    <branch_length>0.09</branch_length>
+                                                    <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Fragaria_vesca_box.jpg</uri>
+                                                </clade>
+                                            </clade>
+                                        </clade>
+                                        <clade>
+                                            <name>Malpighiales</name>
+                                            <branch_length>0.18</branch_length>
+                                            <clade>
+                                                <name>Euphorbiaceae</name>
+                                                <branch_length>0.09</branch_length>
+                                                <clade>
+                                                    <name>Manihot esculenta</name>
+                                                    <branch_length>0.1</branch_length>
+                                                    <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Manihot_esculenta_box.jpg</uri>
+                                                </clade>
+                                                <clade>
+                                                    <name>Ricinus communis</name>
+                                                    <branch_length>0.1</branch_length>
+                                                    <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Ricinus_communis_box.jpg</uri>
+                                                </clade>
+                                            </clade>
+                                            <clade>
+                                                <name>Populus trichocarpa</name>
+                                                <branch_length>0.19</branch_length>
+                                                <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Populus_trichocarpa_box.jpg</uri>
+                                            </clade>
+                                        </clade>
+                                    </clade>
+                                    <clade>
+                                        <name>Malvids</name>
+                                        <branch_length>0.09</branch_length>
+                                        <clade>
+                                            <name>Brassicales</name>
+                                            <branch_length>0.18</branch_length>
+                                            <clade>
+                                                <name>Arabidopsis</name>
+                                                <branch_length>0.18</branch_length>
+                                                <clade>
+                                                    <name>Arabidopsis thaliana</name>
+                                                    <branch_length>0.01</branch_length>
+                                                    <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Arabidopsis_thaliana_box.jpg</uri>
+                                                </clade>
+                                                <clade>
+                                                    <name>Arabidopsis lyrata</name>
+                                                    <branch_length>0.01</branch_length>
+                                                    <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Arabidopsis_lyrata_box.jpg</uri>
+                                                </clade>
+                                            </clade>
+                                            <clade>
+                                                <name>Carica papaya</name>
+                                                <branch_length>0.19</branch_length>
+                                                <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Carica_papaya_box.jpg</uri>
+                                            </clade>
+                                        </clade>
+                                        <clade>
+                                            <name>Theobroma cacao</name>
+                                            <branch_length>0.37</branch_length>
+                                            <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Theobroma_cacao_box.jpg</uri>
+                                        </clade>
+                                    </clade>
+                                </clade>
+                                <clade>
+                                    <name>Vitis vinifera</name>
+                                    <branch_length>0.55</branch_length>
+                                    <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Vitis_vinifera_box.jpg</uri>
+                                </clade>
+                            </clade>
+                            <clade>
+                                <name>Monocots</name>
+                                <branch_length>0.09</branch_length>
+                                <clade>
+                                    <name>BEPClade</name>
+                                    <branch_length>0.27</branch_length>
+                                    <clade>
+                                        <name>Oryza</name>
+                                        <branch_length>0.27</branch_length>
+                                        <clade>
+                                            <name>Oryza sativa ssp. japonica</name>
+                                            <branch_length>0.01</branch_length>
+                                            <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Oryza_sativa_ssp._japonica_box.jpg</uri>
+                                        </clade>
+                                        <clade>
+                                            <name>Oryza sativa ssp. indica</name>
+                                            <branch_length>0.01</branch_length>
+                                            <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Oryza_sativa_ssp._indica_box.jpg</uri>
+                                        </clade>
+                                    </clade>
+                                    <clade>
+                                        <name>Brachypodium distachyon</name>
+                                        <branch_length>0.28</branch_length>
+                                        <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Brachypodium_distachyon_box.jpg</uri>
+                                    </clade>
+                                </clade>
+                                <clade>
+                                    <name>PACCMADClade</name>
+                                    <branch_length>0.27</branch_length>
+                                    <clade>
+                                        <name>Sorghum bicolor</name>
+                                        <branch_length>0.28</branch_length>
+                                        <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Sorghum_bicolor_box.jpg</uri>
+                                    </clade>
+                                    <clade>
+                                        <name>Zea mays</name>
+                                        <branch_length>0.28</branch_length>
+                                        <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Zea_mays_box.jpg</uri>
+                                    </clade>
+                                </clade>
+                            </clade>
+                        </clade>
+                        <clade>
+                            <name>Selaginella moellendorffii</name>
+                            <branch_length>0.73</branch_length>
+                            <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Selaginella_moellendorffii_box.jpg</uri>
+                        </clade>
+                    </clade>
+                    <clade>
+                        <name>Physcomitrella patens</name>
+                        <branch_length>0.82</branch_length>
+                        <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Physcomitrella_patens_box.jpg</uri>
+                    </clade>
+                </clade>
+                <clade>
+                    <name>Chlorophyta</name>
+                    <branch_length>0.36</branch_length>
+                    <clade>
+                        <name>Mamiellales</name>
+                        <branch_length>0.36</branch_length>
+                        <clade>
+                            <name>Ostreococcus</name>
+                            <branch_length>0.18</branch_length>
+                            <clade>
+                                <name>Ostreococcus lucimarinus</name>
+                                <branch_length>0.01</branch_length>
+                                <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Ostreococcus_lucimarinus_box.jpg</uri>
+                            </clade>
+                            <clade>
+                                <name>Ostreococcus tauri</name>
+                                <branch_length>0.01</branch_length>
+                                <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Ostreococcus_tauri_box.jpg</uri>
+                            </clade>
+                        </clade>
+                        <clade>
+                            <name>Micromonas sp. RCC299</name>
+                            <branch_length>0.19</branch_length>
+                            <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Micromonas_sp._RCC299_box.jpg</uri>
+                        </clade>
+                    </clade>
+                    <clade>
+                        <name>Chlamydomonadales</name>
+                        <branch_length>0.36</branch_length>
+                        <clade>
+                            <name>Volvox carteri</name>
+                            <branch_length>0.19</branch_length>
+                            <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Volvox_carteri_box.jpg</uri>
+                        </clade>
+                        <clade>
+                            <name>Chlamydomonas reinhardtii</name>
+                            <branch_length>0.19</branch_length>
+                            <uri type="image">https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v2_5/img/organisms/box/Chlamydomonas_reinhardtii_box.jpg</uri>
+                        </clade>
+                    </clade>
+                </clade>
+            </clade>
+        </clade>
+    </phylogeny>
+</phyloxml>

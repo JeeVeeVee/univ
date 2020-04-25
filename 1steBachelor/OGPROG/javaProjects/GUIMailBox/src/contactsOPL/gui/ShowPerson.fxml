@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import prog2.contacts.gui.PersonInfo?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      stylesheets="@contacts.css">
+
+    <HBox>
+        <PersonInfo fx:id="info"/>
+        <Button styleClass="saveButton" onAction="#doUpdate">
+            <tooltip>
+                <Tooltip text="%button.save.tooltip"/>
+            </tooltip>
+        </Button>
+    </HBox>
+    <TableView fx:id="contactTableView" prefHeight="120.0" VBox.vgrow="ALWAYS">
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+        </columnResizePolicy>
+        <columns>
+            <TableColumn fx:id="contactTypeColumn" prefWidth="150.0" text="%table.contacts.type"/>
+            <TableColumn fx:id="addressColumn" prefWidth="250.0" text="%table.contacts.address"/>
+            <TableColumn fx:id="deleteButtonColumn" maxWidth="40.0" minWidth="40.0" prefWidth="40.0"/>
+        </columns>
+        <placeholder>
+            <Label id="placeholder" text="%placeholder.empty"/>
+        </placeholder>
+    </TableView>
+    <HBox styleClass="buttonHBox">
+        <ChoiceBox fx:id="contactChoice"/>
+        <Button styleClass="newButton" onAction="#doNewContact">
+            <tooltip>
+                <Tooltip text="%button.new.contact.tooltip"/>
+            </tooltip>
+        </Button>
+    </HBox>
+
+</VBox>

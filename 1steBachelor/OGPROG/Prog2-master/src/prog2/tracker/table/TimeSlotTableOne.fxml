@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  TimeSlotTableOne.fxml
+  ============================================================
+  Copyright (C) 2012-2013 Universiteit Gent
+  
+  Bijlage bij het vak 'Programmeren 2'.
+  
+  Auteur: Kris Coolsaet
+-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<VBox id="AnchorPane" alignment="TOP_CENTER" prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="prog2.tracker.table.TimeSlotTableOneCompanion">
+    <stylesheets>
+        <URL value="@timeslottable.css"/>
+    </stylesheets>
+    <TableView fx:id="tableView" prefHeight="250.0">
+        <columns>
+            <TableColumn fx:id="beginColumn" minWidth="10" prefWidth="250.0" text="Begin"/>
+            <TableColumn fx:id="endColumn" minWidth="10" prefWidth="250.0" text="Einde"/>
+            <TableColumn fx:id="descriptionColumn" minWidth="10" prefWidth="350.0" text="Beschrijving"/>
+        </columns>
+    </TableView>
+    <HBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0">
+        <Button id="buttonDelete" fx:id="deleteButton" mnemonicParsing="false" onAction="#doDelete"
+                text="Verwijder"/>
+        <Button id="buttonEdit" fx:id="editButton" mnemonicParsing="false" onAction="#doEdit" text="Wijzig"/>
+        <Button defaultButton="false" mnemonicParsing="false" onAction="#doAdd" text="Voeg toe"/>
+    </HBox>
+</VBox>

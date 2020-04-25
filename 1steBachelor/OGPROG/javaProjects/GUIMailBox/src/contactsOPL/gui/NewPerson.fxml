@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import prog2.contacts.gui.PersonInfo?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      stylesheets="@contacts.css">
+
+    <PersonInfo fx:id="info"/>
+    <HBox styleClass="buttonHBox">
+        <Button text="%button.add.caption" onAction="#doSubmit"/>
+        <Button text="%button.cancel.caption" onAction="#doCancel"/>
+    </HBox>
+
+</VBox>

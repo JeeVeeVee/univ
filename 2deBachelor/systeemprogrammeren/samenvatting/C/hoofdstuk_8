@@ -1,0 +1,115 @@
+8) Ontwikkeling van modulaire programma's
+CONCEPT FUNCTIES IN C	
+call&return
+-> een functie wordt opgeroepen en na beëndiging worden de volgende instructies uit de oproepende code uitgevoerd
+
+divide et impera
+-> de complexiteit wordt beheerst door decompositie
+
+procedurale abstractie
+-> een gebruiker moet enkel de interface van de functie kennen om hem te begrijpen (en dus geen implementatie)
+
+PROGRAMMA MODULARITEIT
+een uitgebreid C-programma wordt altijd opgesplitst in verschillende bronbestanden
+compilatie van elk van deze levert ons een object bestand op. 
+de verschillende modules worden uitvoerbaar gemaakt door de linker 
+-> zoekt de naam van een object bestand op  om deze te kunnen linken aan de juiste functies en variablen 
+
+DEFINITIE VAN FUNCTIES	
+syntax: 
+
+{type} functie_naam(parameter_lijst){
+	{declaraties}
+	{opdrachten}
+}
+
+de uitvoering van een functie stopt wanneer een return opdracht plaatsvindt
+bij void functies is er geen return waarde 
+
+DECLARATIE VAN FUNCTIES
+Een functie-declaratie ziet er uit als een functie-definitie, zonder body
+
+elke functie moet gedeclareert worden voor ze wordt gebruikt, oplossingen hiervoor: 
+	- defineer alle functies voor ze gebruikt worden (niet mogelijk wanneer functies elkaar oproepen)
+	- gebruik een functie prototype en plaats dit voor het gebruik van de functie zelf
+
+de syntax voor zo een functie-prototype: 
+
+{type} functie_naam(proto_lijst);
+
+alle declaraties worden in een headerbestand geplaatst (heeft de .h extentie)
+
+
+OPROEPEN VAN FUNCTIES: CALL BY VALUE
+het effect van een functie-oproep: 
+1) de waarden van de argumenten worden geëvalueerd
+2) de waarde van elk arguemtn wordt toegekend aan de formele parameter van de functie-definitie
+3) de controle wordt overgedragen aan de functie
+4) de resultaatwaarde vervangt de functieoproep in de oproepende code
+
+STORAGE CLASSES EN SCOPE
+een variable wordt gekenmerkt door: 
+- type
+- zichtbaarheid
+- levensduur
+
+de laatste 2 worden bepaald door: 
+- plaats van declaratie (scoping rules) 
+- de opslagmodaliteiten (storage class)
+
+er zijn 4 opslagklassen: 
+1) auto
+	- default storage class
+	- lokale variablen wordten gecreëerd bij de start van het blok en worden vernietigd bij het eindigen van het blok. 
+	- levensduur variable = levensduur blok 
+	- auto kan worden weggelaten (tis auto) 
+
+2) register
+	- variable wordt opgeslaan in processor register (snelste vorm van geheugen) 
+	- wordt gebruikt voor tellers in lussen 
+	- wordt soms genegeerd door de compiler (sad) 
+
+3) extern 
+	- default voor variablen die buiten een blok werden gecreëerd 
+	- globale variable 
+	- levensduur is permanent tijdens uitvoering 
+
+4) static
+	- de waarde blijft behouden bij het herstarten van een blok 
+
+5) static extern 
+	- globale variablen 
+	- bereik wordt beperkt tot dezelfde compilatie eenheid
+	- kan worden gebruikt op ene functie 
+
+ENKELVOUDIGE NAAMRUIMTE VOOR FUNCTIES EN GLOBALE VARIABLEN 
+skip 
+
+FUNCTIENAAM OVERLADING
+mag ni in C (lame) 
+
+MACROS (eig ook lame lmao) 
+tekstuele substitutie in de code
+syntax: 
+
+#define naam(arg1, arg2, ...) schriftteskt 
+
+merk op: er is gaan ; om dit af te sluiten 
+
+
+FUNCTIES MET EEN WILLEKEURIG AANTAL ARGUMENTEN 
+vb : printf 
+als je dergelijke functie wil schrijven, moet je de header <stdarg.h> includen 
+deze header defineert de gegevensstructuur en 3 macro's:
+- va_start = zorgt voor initialisatie en vereist aantal argumenten 
+- va_arg   = verschaft toegaing to een argument
+- va_end   = dient opgeroepen te worden na toegang tot het laatste argument
+
+er zijn een aantal beperkingen 
+1) we moeten het aantal argumenten te weten komen
+	- via vast argument
+	- via vast eind argument 
+2) het type van de argumenten moet gekend zijn 
+3) der argumenten moeten sequentieel doorlopen worden 
+
+
